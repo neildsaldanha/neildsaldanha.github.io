@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Neil Saldanha, Growth and Customer Success</title>
-<meta name="description" content="Growth and customer success in a UK subscription business. 750+ customers reached in under 4 hours, Trustpilot reviews grown from about 30 to about 250, over £25,000 in prepayment sales. Open to roles in London and the UK.">
+<meta name="description" content="Growth and customer success in a UK subscription business. 750+ customers reached in under 4 hours, Trustpilot reviews grown from about 30 to over 250, over £25,000 in prepayment sales. Open to roles in London and the UK.">
 <!-- Link preview (LinkedIn, WhatsApp, Slack) -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Neil Saldanha, Growth and Customer Success">
 <meta property="og:description" content="I find out why customers stay or leave, and fix it. Case studies, results and CV.">
 <meta property="og:url" content="https://neildsaldanha.github.io/">
-<meta property="og:image" content="https://neildsaldanha.github.io/preview.png">
+<meta property="og:image" content="https://neildsaldanha.github.io/media/preview.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -64,6 +64,9 @@
   .facts tr:last-child td { border-bottom: 1px solid var(--line); }
   .facts .num { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 800; letter-spacing: -0.03em; white-space: nowrap; padding-right: 32px; width: 1%; }
   .facts .what { font-size: 17px; }
+  .facts .num { font-variant-numeric: tabular-nums; }
+  .facts .num.slow { color: #c0392b; }
+  .facts .num.fast { color: var(--accent); transition: color .6s ease; }
   .facts sup { font-family: var(--mono); font-size: 12px; color: var(--muted); }
   .notes { margin: 20px 0 0; padding: 0; list-style: none; font-size: 13px; color: var(--muted); }
   .notes li { margin: 4px 0; }
@@ -161,18 +164,18 @@
         <a class="btn plain" href="https://linkedin.com/in/neildhiren-saldanha" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
-    <img class="photo" src="photo.png" alt="Neil Saldanha" onerror="this.remove()">
+    <img class="photo" src="media/photo.png" alt="Neil Saldanha" onerror="this.remove()">
   </div>
 </header>
 
 <section id="results">
   <h2>What changed while I was there</h2>
   <table class="facts">
-    <tr><td class="num">750+</td><td class="what">customers messaged in under 4 hours, up from about 200 in a full day by hand<sup>1</sup></td></tr>
-    <tr><td class="num">~30 to ~250</td><td class="what">Trustpilot reviews in six months<sup>2</sup></td></tr>
-    <tr><td class="num">£25,000+</td><td class="what">in sales from prepaid plans I set up<sup>3</sup></td></tr>
-    <tr><td class="num">~5 min</td><td class="what">to log a delivery complaint, down from 20 to 25 minutes<sup>4</sup></td></tr>
-    <tr><td class="num">54</td><td class="what">customer interviews across four customer groups<sup>5</sup></td></tr>
+    <tr><td class="num"><span class="count" data-from="0" data-to="750">750</span>+</td><td class="what">customers messaged in under 4 hours, up from about 200 in a full day of typing each message manually<sup>1</sup></td></tr>
+    <tr><td class="num">~30 to <span class="count" data-from="30" data-to="250">250</span>+</td><td class="what">Trustpilot reviews in six months<sup>2</sup></td></tr>
+    <tr><td class="num">£<span class="count" data-from="0" data-to="25000">25,000</span>+</td><td class="what">in sales from prepaid plans I set up<sup>3</sup></td></tr>
+    <tr><td class="num">~<span class="count down" data-from="25" data-to="5">5</span> min</td><td class="what">to log a delivery complaint, down from 20 to 25 minutes<sup>4</sup></td></tr>
+    <tr><td class="num"><span class="count" data-from="0" data-to="54">54</span></td><td class="what">customer interviews across four customer groups<sup>5</sup></td></tr>
   </table>
   <ol class="notes">
     <li><span>1</span>WhatsApp messages sent in one session, before and after the Excel macro I built.</li>
@@ -209,13 +212,13 @@
       <p class="result"><b>Result.</b> About 5 minutes per complaint, a cut of 75 to 80%.</p>
     </div></div>
 
-  <div class="case"><button aria-expanded="false"><h3>Growing customer reviews</h3><span class="metric">~30 to ~250 reviews</span><span class="toggle">Open</span></button>
+  <div class="case"><button aria-expanded="false"><h3>Growing customer reviews</h3><span class="metric">~30 to 250+ reviews</span><span class="toggle">Open</span></button>
     <div class="body">
       <div>
         <p><b>The problem.</b> While I was trying to win back inactive customers (people who signed up but never ordered), many told me other brands had better Trustpilot scores. They had joined to look at the menu, not to buy. With only about 30 reviews, we were short on social proof.</p>
         <p><b>What I did.</b> I took over review generation and built the outreach step by step. I contacted every customer we delivered to each week, and sent the Trustpilot link to the ones who replied and had a good experience.</p>
       </div>
-      <p class="result"><b>Result.</b> About 250 reviews in six months, roughly eight times where we started.</p>
+      <p class="result"><b>Result.</b> Over 250 reviews in six months, more than eight times where we started.</p>
     </div></div>
 
   <div class="case"><button aria-expanded="false"><h3>Bulk prepayment programme</h3><span class="metric">£25,000+ in sales</span><span class="toggle">Open</span></button>
@@ -265,7 +268,7 @@
       <p>Your data is encrypted on your phone before it leaves, so nobody else can read it, me included. I built it with Claude Code.</p>
       <p class="soon">It isn't public yet. If you'd like to try it when it opens, <a href="mailto:neildhiren@gmail.com?subject=Side%20by%20Side">email me</a>.</p>
     </div>
-    <figure class="clip"><div class="frame"><video src="side-by-side.mp4" poster="side-by-side.jpg" muted loop playsinline preload="none" aria-label="A 15-second teaser of the Side by Side app"></video><span class="state">Paused</span><button class="sound" type="button" aria-pressed="false">Sound on</button></div></figure>
+    <figure class="clip"><div class="frame"><video src="media/side-by-side.mp4" poster="media/side-by-side.jpg" muted loop playsinline preload="none" aria-label="A 15-second teaser of the Side by Side app"></video><span class="state">Paused</span><button class="sound" type="button" aria-pressed="false">Sound on</button></div></figure>
   </div>
 </section>
 
@@ -273,13 +276,13 @@
   <h2>Outside work</h2>
   <p class="life-intro">When I'm not working, I'm usually trying a new cuisine or walking up something steep.</p>
   <div class="reel">
-    <figure class="clip"><div class="frame"><video src="food.mp4" poster="food.jpg" muted loop playsinline preload="none" aria-label="Neil eating a new dish with chopsticks"></video><span class="state">Paused</span></div>
+    <figure class="clip"><div class="frame"><video src="media/food.mp4" poster="media/food.jpg" muted loop playsinline preload="none" aria-label="Neil eating a new dish with chopsticks"></video><span class="state">Paused</span></div>
       <figcaption><b>New cuisines</b>Trying food I haven't had before is one of my favourite things to do.</figcaption></figure>
-    <figure class="clip"><div class="frame"><video src="sheep.mp4" poster="sheep.jpg" muted loop playsinline preload="none" aria-label="A sheep chewing grass on a hillside"></video><span class="state">Paused</span></div>
+    <figure class="clip"><div class="frame"><video src="media/sheep.mp4" poster="media/sheep.jpg" muted loop playsinline preload="none" aria-label="A sheep chewing grass on a hillside"></video><span class="state">Paused</span></div>
       <figcaption><b>How I switch off</b>Watching sheep eat grass. They seem to have life figured out.</figcaption></figure>
-    <figure class="clip"><div class="frame"><video src="scafell.mp4" poster="scafell.jpg" muted loop playsinline preload="none" aria-label="The path up Scafell Pike with Wastwater below"></video><span class="state">Paused</span></div>
+    <figure class="clip"><div class="frame"><video src="media/scafell.mp4" poster="media/scafell.jpg" muted loop playsinline preload="none" aria-label="The path up Scafell Pike with Wastwater below"></video><span class="state">Paused</span></div>
       <figcaption><b>Scafell Pike</b>Climbing the highest mountain in England, in the Lake District.</figcaption></figure>
-    <figure class="clip"><div class="frame"><video src="coast.mp4" poster="coast.jpg" muted loop playsinline preload="none" aria-label="Neil walking along a coastal path"></video><span class="state">Paused</span></div>
+    <figure class="clip"><div class="frame"><video src="media/coast.mp4" poster="media/coast.jpg" muted loop playsinline preload="none" aria-label="Neil walking along a coastal path"></video><span class="state">Paused</span></div>
       <figcaption><b>Walks by the sea</b>I want to see as much of the UK, and the world, as I can.</figcaption></figure>
   </div>
 </section>
@@ -316,6 +319,34 @@
         else { delete c.dataset.held; play(c); }
       });
     });
+    // Results numbers count up (and the complaint time counts down) the first time the table scrolls into view
+    var facts = document.querySelector('.facts');
+    if (facts && !reduce && 'IntersectionObserver' in window) {
+      var counts = [].slice.call(facts.querySelectorAll('.count'));
+      counts.forEach(function (s) {
+        var td = s.closest('.num');
+        td.style.minWidth = td.getBoundingClientRect().width + 'px'; // stop the column jumping while digits change
+        s.textContent = Number(s.dataset.from).toLocaleString('en-GB');
+        if (s.classList.contains('down')) td.classList.add('slow');
+      });
+      var fio = new IntersectionObserver(function (entries) {
+        if (!entries[0].isIntersecting) return;
+        fio.disconnect();
+        counts.forEach(function (s, i) {
+          var from = Number(s.dataset.from), to = Number(s.dataset.to), dur = 1600, t0 = null;
+          function step(ts) {
+            if (t0 === null) t0 = ts;
+            var k = Math.min(1, (ts - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+            s.textContent = Math.round(from + (to - from) * e).toLocaleString('en-GB');
+            if (k < 1) requestAnimationFrame(step);
+            else if (s.classList.contains('down')) { var td = s.closest('.num'); td.classList.remove('slow'); td.classList.add('fast'); }
+          }
+          setTimeout(function () { requestAnimationFrame(step); }, i * 150);
+        });
+      }, { threshold: 0.4 });
+      fio.observe(facts);
+    }
+
     // Sound button on the Side by Side teaser (browsers only autoplay muted video)
     document.querySelectorAll('.sound').forEach(function (b) {
       b.addEventListener('click', function (e) {
