@@ -3,188 +3,353 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Neil Saldanha · Growth &amp; Customer Success</title>
-<meta name="description" content="Growth and customer success in a UK D2C subscription business: 200 → 750+ daily WhatsApp contacts, ~30 → ~250 Trustpilot reviews, £25,000+ in prepayment sales. Open to roles in London and the UK.">
+<title>Neil Saldanha, Growth and Customer Success</title>
+<meta name="description" content="Growth and customer success in a UK subscription business. 750+ customers reached in under 4 hours, Trustpilot reviews grown from about 30 to about 250, over £25,000 in prepayment sales. Open to roles in London and the UK.">
 <!-- Link preview (LinkedIn, WhatsApp, Slack) -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Neil Saldanha · Growth & Customer Success">
+<meta property="og:title" content="Neil Saldanha, Growth and Customer Success">
 <meta property="og:description" content="I find out why customers stay or leave, and fix it. Case studies, results and CV.">
 <meta property="og:url" content="https://neildsaldanha.github.io/">
 <meta property="og:image" content="https://neildsaldanha.github.io/preview.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' fill='white' text-anchor='middle'%3ENS%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111111'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' fill='white' text-anchor='middle'%3ENS%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #faf8f5; --card: #ffffff; --ink: #1d1d1f; --muted: #5f6368;
-    --accent: #0f766e; --accent-soft: #e6f4f1; --line: #e7e3dc;
+    --bg: #ffffff; --ink: #111111; --muted: #6b6b6b; --line: #e5e5e5;
+    --accent: #0f766e;
+    --mono: ui-monospace, "SFMono-Regular", Consolas, monospace;
   }
   * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
   body { margin: 0; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; }
-  .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
-  nav { position: sticky; top: 0; background: rgba(250,248,245,.92); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); z-index: 10; }
-  nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 56px; }
-  nav a { color: var(--muted); text-decoration: none; margin-left: 18px; font-size: 14px; }
-  nav a:hover { color: var(--accent); }
-  .logo { font-weight: 700; color: var(--ink); margin: 0; }
-  header { padding: 72px 0 48px; }
-  .tag { display: inline-block; background: var(--accent-soft); color: var(--accent); padding: 4px 12px; border-radius: 99px; font-size: 13px; font-weight: 600; }
-  h1 { font-size: clamp(32px, 6vw, 48px); line-height: 1.15; margin: 16px 0; }
-  .lead { font-size: 18px; color: var(--muted); max-width: 640px; }
-  .btns { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
-  .btn { padding: 12px 20px; border-radius: 10px; font-weight: 600; text-decoration: none; font-size: 15px; }
-  .btn.primary { background: var(--accent); color: #fff; }
-  .btn.ghost { border: 1px solid var(--line); color: var(--ink); background: var(--card); }
-  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 40px; }
-  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
-  .stat b { display: block; font-size: 26px; color: var(--accent); }
-  .stat span { font-size: 13px; color: var(--muted); }
-  section { padding: 48px 0; }
-  h2 { font-size: 26px; margin: 0 0 8px; }
-  .sub { color: var(--muted); margin: 0 0 24px; }
-  .case { background: var(--card); border: 1px solid var(--line); border-radius: 14px; margin-bottom: 12px; overflow: hidden; }
-  .case button { all: unset; cursor: pointer; display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 18px 20px; box-sizing: border-box; }
-  .case button:focus-visible { outline: 2px solid var(--accent); }
-  .case h3 { margin: 0; font-size: 17px; }
-  .case .result { color: var(--accent); font-weight: 600; font-size: 14px; }
-  .case .plus { font-size: 22px; color: var(--muted); transition: transform .2s; margin-left: 12px; }
-  .case.open .plus { transform: rotate(45deg); }
-  .case .body { display: none; padding: 0 20px 20px; }
-  .case.open .body { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
-  .case .body div { background: var(--bg); border-radius: 10px; padding: 14px; font-size: 14px; }
-  .case .body strong { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: 4px; }
-  .timeline { border-left: 2px solid var(--line); margin-left: 8px; }
-  .job { position: relative; padding: 0 0 28px 24px; }
-  .job::before { content: ""; position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); }
-  .job .when { font-size: 13px; color: var(--muted); }
-  .job h3 { margin: 2px 0; font-size: 17px; }
-  .job p { margin: 4px 0 0; font-size: 14px; color: var(--muted); }
-  .skills { display: flex; flex-wrap: wrap; gap: 8px; }
-  .skills span { background: var(--card); border: 1px solid var(--line); border-radius: 99px; padding: 6px 14px; font-size: 14px; }
-  .story { background: var(--accent-soft); border-radius: 14px; padding: 24px; }
-  .story p { margin: 0; font-size: 17px; }
-  .quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
-  .quote { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; margin: 0; }
-  .quote p { font-size: 18px; font-weight: 600; margin: 0 0 12px; }
-  .quote cite { font-style: normal; font-size: 14px; color: var(--muted); }
-  .quote a, .case a { color: var(--accent); }
-  .hero-top { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-  .photo { width: 104px; height: 104px; border-radius: 50%; object-fit: cover; border: 3px solid var(--card); box-shadow: 0 2px 10px rgba(0,0,0,.08); }
-  .open-to { margin-top: 16px; display: inline-block; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 8px; padding: 10px 14px; font-size: 15px; }
-  .cta { background: var(--ink); color: #fff; border-radius: 16px; padding: 32px 24px; }
-  .cta h2 { color: #fff; }
-  .cta p { color: #d4d4d8; margin: 0 0 8px; }
-  .cta .btn.ghost { background: transparent; color: #fff; border-color: #52525b; }
-  footer { padding: 40px 0 60px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
-  footer a { color: var(--accent); }
-  .stat b { white-space: nowrap; }
-  @media (max-width: 700px) { .stats { grid-template-columns: repeat(2, 1fr); } .stat b { font-size: 22px; } }
-  @media (max-width: 600px) { nav .links a:not(:last-child) { display: none; } }
+  a { color: inherit; }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+  @media (max-width: 600px) { .wrap { padding: 0 16px; } }
+
+  nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 64px; }
+  nav .me { font-weight: 600; text-decoration: none; }
+  nav .links a { color: var(--muted); text-decoration: none; margin-left: 24px; font-size: 15px; }
+  nav .links a:hover { color: var(--ink); }
+  @media (max-width: 700px) { nav .links a:not(:last-child) { display: none; } }
+
+  /* Hero: the name set big, the photo grounded beside the text */
+  .hero { padding: 40px 0 120px; }
+  .name { font-size: clamp(3.4rem, 12.5vw, 10.5rem); font-weight: 800; line-height: .92; letter-spacing: -0.045em; margin: 0 0 56px; }
+  .hero-grid { display: grid; grid-template-columns: 7fr 5fr; gap: 48px; align-items: end; }
+  .thesis { font-size: clamp(1.6rem, 3.2vw, 2.6rem); line-height: 1.2; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 24px; max-width: 18ch; }
+  .lead { font-size: 18px; color: var(--muted); max-width: 52ch; margin: 0 0 16px; }
+  .open-to { font-size: 16px; max-width: 52ch; margin: 0 0 32px; }
+  .btns { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 14px 22px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 15px; }
+  .btn.solid { background: var(--ink); color: #fff; }
+  .btn.plain { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; padding-left: 8px; padding-right: 8px; }
+  .photo { width: 100%; max-width: 420px; aspect-ratio: 1; object-fit: cover; border-radius: 4px; justify-self: end; box-shadow: 0 24px 40px -24px rgba(0,0,0,.35); }
+  @media (max-width: 820px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .photo { justify-self: start; max-width: 280px; grid-row: 1; }
+    .hero { padding-bottom: 80px; }
+  }
+
+  section { padding: 80px 0; }
+  @media (min-width: 821px) { section { padding: 96px 0; } }
+  h2 { font-size: clamp(1.8rem, 3.6vw, 2.8rem); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 48px; max-width: 22ch; }
+
+  /* Results: a hairline table with footnotes */
+  .facts { width: 100%; border-collapse: collapse; }
+  .facts td { border-top: 1px solid var(--line); padding: 22px 0; vertical-align: baseline; }
+  .facts tr:last-child td { border-bottom: 1px solid var(--line); }
+  .facts .num { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 800; letter-spacing: -0.03em; white-space: nowrap; padding-right: 32px; width: 1%; }
+  .facts .what { font-size: 17px; }
+  .facts sup { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .notes { margin: 20px 0 0; padding: 0; list-style: none; font-size: 13px; color: var(--muted); }
+  .notes li { margin: 4px 0; }
+  .notes span { font-family: var(--mono); margin-right: 8px; }
+  @media (max-width: 600px) { .facts .num { display: block; padding: 0 0 4px; } .facts td { display: block; border: 0; padding: 0; } .facts tr { display: block; border-top: 1px solid var(--line); padding: 18px 0; } .facts tr:last-child { border-bottom: 1px solid var(--line); } .facts tr:last-child td { border: 0; } }
+
+  /* Story */
+  .story { font-size: clamp(1.25rem, 2.2vw, 1.6rem); line-height: 1.45; max-width: 36ch; margin: 0; }
+
+  /* Case studies: hairline rows you can open */
+  .case { border-top: 1px solid var(--line); }
+  .case:last-of-type { border-bottom: 1px solid var(--line); }
+  .case button { all: unset; cursor: pointer; display: grid; grid-template-columns: 7fr 5fr auto; gap: 24px; align-items: baseline; width: 100%; padding: 28px 0; box-sizing: border-box; }
+  .case button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  .case h3 { margin: 0; font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 600; }
+  .case .metric { font-size: clamp(1.2rem, 2.2vw, 1.7rem); font-weight: 800; letter-spacing: -0.02em; }
+  .case .toggle { font-size: 15px; color: var(--muted); text-decoration: underline; text-underline-offset: 4px; }
+  .case .body { display: none; grid-template-columns: 7fr 5fr; gap: 24px 48px; padding: 0 0 40px; }
+  .case.open .body { display: grid; }
+  .case .body p { margin: 0 0 16px; font-size: 17px; max-width: 60ch; }
+  .case .body b { font-weight: 600; }
+  .case .result { font-size: 17px; }
+  .case .result a { color: var(--accent); }
+  @media (max-width: 700px) {
+    .case button { grid-template-columns: 1fr auto; }
+    .case .metric { grid-column: 1; grid-row: 2; }
+    .case .body { grid-template-columns: 1fr; }
+  }
+
+  /* Quotes: set big, mark hung in the margin */
+  .quote { margin: 0 0 72px; }
+  .quote p { font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.15; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 16px; text-indent: -0.42em; max-width: 22ch; }
+  .quote cite { font-style: normal; color: var(--muted); font-size: 15px; }
+  .quote cite a { color: var(--muted); }
+  .quote.second p { font-size: clamp(1.4rem, 2.8vw, 2.1rem); }
+
+  /* Experience: hairline table */
+  .jobs { border-top: 1px solid var(--line); }
+  .job { display: grid; grid-template-columns: 4fr 8fr; gap: 24px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+  .job .when { font-family: var(--mono); font-size: 13px; color: var(--muted); padding-top: 4px; }
+  .job h3 { margin: 0 0 4px; font-size: 18px; font-weight: 600; }
+  .job p { margin: 0; color: var(--muted); font-size: 16px; }
+  @media (max-width: 600px) { .job { grid-template-columns: 1fr; gap: 4px; } }
+  .tools { font-size: 17px; max-width: 70ch; margin: 40px 0 0; }
+
+  /* Closing strip and wordmark */
+  .close { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 40px 0; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+  .close p { margin: 0; font-size: 18px; max-width: 46ch; }
+  .wordmark { font-size: clamp(3rem, 13vw, 11rem); font-weight: 800; letter-spacing: -0.05em; line-height: .85; margin: 64px 0 0; white-space: nowrap; overflow: hidden; }
+  footer { padding: 24px 0 40px; color: var(--muted); font-size: 14px; }
+
+  /* Outside work: four short clips that play as they scroll into view */
+  .life-intro { font-size: 18px; color: var(--muted); max-width: 52ch; margin: -24px 0 48px; }
+  .reel { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; align-items: start; }
+  .clip { margin: 0; will-change: transform; }
+  .clip:nth-child(even) { margin-top: 72px; }
+  .clip .frame { position: relative; aspect-ratio: 9 / 16; border-radius: 6px; overflow: hidden; background: #f2f2f2; cursor: pointer; box-shadow: 0 30px 40px -30px rgba(0,0,0,.45); }
+  .clip video { width: 100%; height: 100%; object-fit: cover; display: block; transform: scale(1.04); transition: transform 1.2s ease; }
+  .clip.playing video { transform: scale(1); }
+  .clip .state { position: absolute; left: 12px; bottom: 12px; font-size: 12px; color: #fff; background: rgba(0,0,0,.45); padding: 4px 8px; border-radius: 4px; opacity: 0; transition: opacity .3s; }
+  .clip.paused .state { opacity: 1; }
+  .clip figcaption { margin-top: 14px; font-size: 15px; line-height: 1.45; }
+  .clip figcaption b { display: block; font-weight: 600; font-size: 17px; margin-bottom: 2px; }
+  /* Side project */
+  .project { display: grid; grid-template-columns: 7fr 5fr; gap: 48px; align-items: center; }
+  .project h3 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; letter-spacing: -0.03em; margin: 0 0 20px; }
+  .project p { font-size: 18px; max-width: 52ch; margin: 0 0 16px; }
+  .project .soon { color: var(--muted); font-size: 16px; }
+  .project .clip { max-width: 340px; justify-self: end; width: 100%; }
+  .sound { position: absolute; right: 12px; bottom: 12px; font: 600 13px/1 inherit; font-family: inherit; color: #fff; background: rgba(0,0,0,.55); border: 0; border-radius: 4px; padding: 8px 10px; cursor: pointer; }
+  .sound:hover { background: rgba(0,0,0,.75); }
+  @media (max-width: 820px) { .project { grid-template-columns: 1fr; gap: 32px; } .project .clip { justify-self: start; max-width: 280px; } }
+  @media (max-width: 820px) {
+    .reel { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-left: 16px; gap: 16px; margin: 0 -16px; padding: 0 16px 8px; scrollbar-width: none; }
+    .reel::-webkit-scrollbar { display: none; }
+    .clip { flex: 0 0 68%; scroll-snap-align: start; }
+    .clip:nth-child(even) { margin-top: 0; }
+  }
 </style>
 </head>
 <body>
-<nav><div class="wrap"><p class="logo">Neil Saldanha</p><div class="links"><a href="#work">Case studies</a><a href="#testimonials">Testimonials</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></div></nav>
+<nav><div class="wrap"><a class="me" href="#">Neil Saldanha</a><div class="links"><a href="#results">Results</a><a href="#work">Case studies</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></div></nav>
 
 <div class="wrap">
-<header>
-  <div class="hero-top">
-    <img class="photo" src="photo.png" alt="Neil Dhiren Saldanha" onerror="this.remove()">
-    <span class="tag">London · Growth, Customer Success &amp; Operations</span>
-  </div>
-  <h1>I find out why customers stay or leave, and fix it.</h1>
-  <p class="lead">Tactical Growth, Customer Success at Eat Ping, a UK meal-prep subscription. I turn customer evidence into decisions teams act on, and automate manual work so a small team can do more.</p>
-  <div class="open-to"><strong>Open to:</strong> Growth, CRM, Customer Insights Analyst and Customer Success &amp; Operations roles · London, or anywhere in the UK</div>
-  <div class="btns">
-    <a class="btn primary" href="#contact">Let's talk</a>
-    <a class="btn ghost" href="Neil-Saldanha-CV.pdf" download>Download PDF CV</a>
-    <a class="btn ghost" href="https://linkedin.com/in/neildhiren-saldanha" target="_blank" rel="noopener">LinkedIn</a>
-  </div>
-  <div class="stats">
-    <div class="stat"><b>200 → 750+</b><span>daily WhatsApp contacts, no extra headcount</span></div>
-    <div class="stat"><b>~30 → ~250</b><span>Trustpilot reviews in 6 months</span></div>
-    <div class="stat"><b>£25,000+</b><span>sales from a prepayment programme</span></div>
-    <div class="stat"><b>54</b><span>customer interviews across four segments</span></div>
+<header class="hero">
+  <h1 class="name">Neil Saldanha</h1>
+  <div class="hero-grid">
+    <div>
+      <p class="thesis">I find out why customers stay or leave, and fix it.</p>
+      <p class="lead">I work in Tactical Growth, Customer Success at Eat Ping, a UK meal-prep subscription in London. I turn customer evidence into decisions teams act on, and automate manual work so a small team can do more.</p>
+      <p class="open-to">Open to Growth, CRM, Customer Insights Analyst and Customer Success &amp; Operations roles in London, or anywhere in the UK.</p>
+      <div class="btns">
+        <a class="btn solid" href="mailto:neildhiren@gmail.com?subject=Hello%20Neil">Email me</a>
+        <a class="btn plain" href="Neil-Saldanha-CV.pdf" download>Download CV</a>
+        <a class="btn plain" href="https://linkedin.com/in/neildhiren-saldanha" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <img class="photo" src="photo.png" alt="Neil Saldanha" onerror="this.remove()">
   </div>
 </header>
 
+<section id="results">
+  <h2>What changed while I was there</h2>
+  <table class="facts">
+    <tr><td class="num">750+</td><td class="what">customers messaged in under 4 hours, up from about 200 in a full day by hand<sup>1</sup></td></tr>
+    <tr><td class="num">~30 to ~250</td><td class="what">Trustpilot reviews in six months<sup>2</sup></td></tr>
+    <tr><td class="num">£25,000+</td><td class="what">in sales from prepaid plans I set up<sup>3</sup></td></tr>
+    <tr><td class="num">~5 min</td><td class="what">to log a delivery complaint, down from 20 to 25 minutes<sup>4</sup></td></tr>
+    <tr><td class="num">54</td><td class="what">customer interviews across four customer groups<sup>5</sup></td></tr>
+  </table>
+  <ol class="notes">
+    <li><span>1</span>WhatsApp messages sent in one session, before and after the Excel macro I built.</li>
+    <li><span>2</span>Public review count on Trustpilot at the start and after six months.</li>
+    <li><span>3</span>Total paid upfront for future weeks across the prepaid plans.</li>
+    <li><span>4</span>Time to log one complaint, before and after the Excel logging tool.</li>
+    <li><span>5</span>Customer interviews, presented to the founder and the wider team in a strategy deck.</li>
+  </ol>
+</section>
+
 <section id="story">
   <h2>How I got here</h2>
-  <div class="story"><p>I got my internship at Eat Ping by sending the founder a message out of the blue. Within ten weeks I was offered a full-time role in the Tactical Growth team. Before that, I studied engineering and ran manufacturing projects, which is where I learned to plan, track and get sign-off across teams.</p></div>
+  <p class="story">I got my internship at Eat Ping by sending the founder a message out of the blue. Within ten weeks I was offered a full-time role in the Tactical Growth team. Before that I studied engineering and ran manufacturing projects, which is where I learned to plan, track and get sign-off across teams.</p>
 </section>
 
 <section id="work">
   <h2>Case studies</h2>
-  <p class="sub">Click a project to see the problem, what I did and the result.</p>
 
-  <div class="case"><button aria-expanded="false"><div><h3>Scaling WhatsApp outreach</h3><span class="result">200 a day → 750+ in under 4 hours</span></div><span class="plus">+</span></button>
-    <div class="body"><div><strong>Problem</strong>Growth outreach to customers was typed by hand, one message at a time. It took a whole day to reach about 200 customers, and there was no budget for paid tools.</div><div><strong>What I did</strong>Found a free way: an Excel VBA macro. It takes a column of names and numbers, fills them into a pre-written message, and sends each one automatically at the click of a Start button. Later I automated most day-to-day customer service with WhatsApp Business flows (Zepic, 360dialog) and a Claude project for inbound email.</div><div><strong>Result</strong>Over 750 customers reached in under 4 hours instead of 200 in a full day, with no extra headcount or software cost, which freed the rest of my day for other work.</div></div></div>
+  <div class="case open"><button aria-expanded="true"><h3>Scaling WhatsApp outreach</h3><span class="metric">750+ in under 4 hours</span><span class="toggle">Close</span></button>
+    <div class="body">
+      <div>
+        <p><b>The problem.</b> Growth outreach to customers was typed by hand, one message at a time. It took a whole day to reach about 200 customers, and there was no budget for paid tools.</p>
+        <p><b>What I did.</b> I found a free way with an Excel VBA macro. It takes a column of names and numbers, fills them into a pre-written message, and sends each one when I press Start. Later I automated most day-to-day customer service with WhatsApp Business flows (Zepic, 360dialog) and a Claude project for inbound email.</p>
+      </div>
+      <p class="result"><b>Result.</b> Over 750 customers reached in under 4 hours instead of 200 in a full day, with no extra headcount or software cost. The rest of my day was free for other work.</p>
+    </div></div>
 
-  <div class="case"><button aria-expanded="false"><div><h3>Faster complaint logging</h3><span class="result">20-25 min → ~5 min</span></div><span class="plus">+</span></button>
-    <div class="body"><div><strong>Problem</strong>Logging one delivery complaint took 20-25 minutes of looking up details across systems.</div><div><strong>What I did</strong>Built an Excel tool that fills in customer, order, payment and courier details from a phone number or email, plus a macro that posts each issue to Slack.</div><div><strong>Result</strong>About 5 minutes per complaint, a 75-80% cut.</div></div></div>
+  <div class="case"><button aria-expanded="false"><h3>Faster complaint logging</h3><span class="metric">20 to 25 min down to 5</span><span class="toggle">Open</span></button>
+    <div class="body">
+      <div>
+        <p><b>The problem.</b> Logging one delivery complaint took 20 to 25 minutes of looking up details across different systems.</p>
+        <p><b>What I did.</b> I built an Excel tool that fills in the customer, order, payment and courier details from a phone number or email, and a macro that posts each issue to Slack.</p>
+      </div>
+      <p class="result"><b>Result.</b> About 5 minutes per complaint, a cut of 75 to 80%.</p>
+    </div></div>
 
-  <div class="case"><button aria-expanded="false"><div><h3>Growing customer reviews</h3><span class="result">~30 → ~250 Trustpilot reviews</span></div><span class="plus">+</span></button>
-    <div class="body"><div><strong>Problem</strong>While trying to win back inactive customers (people who signed up but never ordered), many told me other brands had better Trustpilot scores. They had joined to browse the menu, not to buy. We had only around 30 reviews, so we were missing social proof.</div><div><strong>What I did</strong>Took ownership of review generation and built the outreach step by step: I contacted every customer we delivered to each week, and sent the Trustpilot link to those who replied and had a good experience.</div><div><strong>Result</strong>About 250 reviews in 6 months, roughly 8x.</div></div></div>
+  <div class="case"><button aria-expanded="false"><h3>Growing customer reviews</h3><span class="metric">~30 to ~250 reviews</span><span class="toggle">Open</span></button>
+    <div class="body">
+      <div>
+        <p><b>The problem.</b> While I was trying to win back inactive customers (people who signed up but never ordered), many told me other brands had better Trustpilot scores. They had joined to look at the menu, not to buy. With only about 30 reviews, we were short on social proof.</p>
+        <p><b>What I did.</b> I took over review generation and built the outreach step by step. I contacted every customer we delivered to each week, and sent the Trustpilot link to the ones who replied and had a good experience.</p>
+      </div>
+      <p class="result"><b>Result.</b> About 250 reviews in six months, roughly eight times where we started.</p>
+    </div></div>
 
-  <div class="case"><button aria-expanded="false"><div><h3>Bulk prepayment programme</h3><span class="result">£25,000+ in sales</span></div><span class="plus">+</span></button>
-    <div class="body"><div><strong>Problem</strong>Price came up again and again as a main reason customers cancelled their subscription.</div><div><strong>What I did</strong>Piloted plans where customers pay upfront for future weeks (for example 12 or 24 weeks) in return for a small discount on the total, plus smaller discounted plans. I also encouraged these customers to refer people in their network to similar plans.</div><div><strong>Result</strong>Over £25,000 in sales, customers committed for longer, and referrals brought in more prepaid customers.</div></div></div>
+  <div class="case"><button aria-expanded="false"><h3>Bulk prepayment programme</h3><span class="metric">£25,000+ in sales</span><span class="toggle">Open</span></button>
+    <div class="body">
+      <div>
+        <p><b>The problem.</b> Price came up again and again as a main reason customers cancelled their subscription.</p>
+        <p><b>What I did.</b> I piloted plans where customers pay upfront for future weeks, for example 12 or 24 weeks, in return for a small discount on the total. I also ran smaller discounted plans, and asked these customers to refer people they knew to similar plans.</p>
+      </div>
+      <p class="result"><b>Result.</b> Over £25,000 in sales. Customers committed for longer, and referrals brought in more prepaid customers.</p>
+    </div></div>
 
-  <div class="case"><button aria-expanded="false"><div><h3>Weekly customer feedback loop</h3><span class="result">Every team member sees food feedback, every week</span></div><span class="plus">+</span></button>
-    <div class="body"><div><strong>Problem</strong>The kitchen and operations teams needed a regular, clear view of what customers thought of the food.</div><div><strong>What I did</strong>I survey customers every week with Microsoft Forms and turn the results into a report that opens the weekly team call, with action points for kitchen and operations. The old report only scored taste, texture and portion, which didn't tell the chef what to change, so I rebuilt it to break every dish down by flavour, carbs, protein and sauce, and portion.</div><div><strong>Result</strong>Trends get a plan straight away and changes go into the next production cycle. <a href="https://lnkd.in/p/g3PvGd6x" target="_blank" rel="noopener">Read my LinkedIn post about it</a>.</div></div></div>
+  <div class="case"><button aria-expanded="false"><h3>Weekly customer feedback loop</h3><span class="metric">Every week, every dish</span><span class="toggle">Open</span></button>
+    <div class="body">
+      <div>
+        <p><b>The problem.</b> The kitchen and operations teams needed a regular, clear view of what customers thought of the food.</p>
+        <p><b>What I did.</b> I survey customers every week with Microsoft Forms and turn the results into a report that opens the weekly team call, with action points for kitchen and operations. The old report only scored taste, texture and portion, which didn't tell the chef what to change. I rebuilt it to break every dish down by flavour, carbs, protein and sauce, and portion.</p>
+      </div>
+      <p class="result"><b>Result.</b> When a trend shows up, the team makes a plan in the same call and the change goes into the next production cycle. <a href="https://lnkd.in/p/g3PvGd6x" target="_blank" rel="noopener">My LinkedIn post about it</a></p>
+    </div></div>
 </section>
 
 <section id="testimonials">
-  <h2>What people say</h2>
-  <p class="sub">From public LinkedIn posts by people I work with.</p>
-  <div class="quotes">
-    <blockquote class="quote"><p>“Neil is the hardest worker I’ve ever met.”</p><cite>James W., Eat Ping · <a href="https://lnkd.in/p/gP6AWiPr" target="_blank" rel="noopener">LinkedIn post</a></cite></blockquote>
-    <blockquote class="quote"><p>“…hit the job daily with next level tenacity…”</p><cite>Nick Singh, Founder, Eat Ping · <a href="https://lnkd.in/p/gz__WrkS" target="_blank" rel="noopener">LinkedIn comment</a></cite></blockquote>
-  </div>
+  <h2>What people I work with say</h2>
+  <blockquote class="quote"><p>“Neil is the hardest worker I’ve ever met.”</p><cite>James W., Eat Ping, in a <a href="https://lnkd.in/p/gP6AWiPr" target="_blank" rel="noopener">LinkedIn post</a></cite></blockquote>
+  <blockquote class="quote second"><p>“…hit the job daily with next level tenacity…”</p><cite>Nick Singh, founder of Eat Ping, in a <a href="https://lnkd.in/p/gz__WrkS" target="_blank" rel="noopener">LinkedIn comment</a></cite></blockquote>
 </section>
 
 <section id="experience">
   <h2>Experience</h2>
-  <p class="sub">From engineering projects to customer growth.</p>
-  <div class="timeline">
-    <div class="job"><span class="when">Oct 2025 - Present · London</span><h3>Tactical Growth, Customer Success · Eat Ping</h3><p>Single point of contact for customer experience: customer success, email, WhatsApp and weekly feedback reporting to the founder.</p></div>
-    <div class="job"><span class="when">Mar 2025 - Dec 2025 · Coventry</span><h3>Customer Service Assistant (part time) · Vita Student</h3><p>Front desk and operations for 750+ rooms; ticket triage in Salesforce; co-organised weekly events.</p></div>
-    <div class="job"><span class="when">Sep 2024 - Sep 2025</span><h3>MSc Engineering Business Management, Merit · University of Warwick</h3><p>Dissertation on risk management in engineering projects.</p></div>
-    <div class="job"><span class="when">Oct 2023 - Aug 2024 · Bangalore</span><h3>Mechanical Design Trainee · STEER World</h3><p>Ran five concurrent design-to-assembly projects; cut delays by about 5% through change control and cross-team sign-off.</p></div>
-    <div class="job"><span class="when">Aug 2022 - Sep 2022 · India</span><h3>Engineering Intern (MRO) · Hindustan Aeronautics Limited</h3><p>Scheduled and documented inspections on Kiran Mk.II jet trainers alongside licensed engineers, in a regulated aviation setting.</p></div>
-    <div class="job"><span class="when">2019 - 2023</span><h3>BEng Mechanical Engineering, First Class with Distinction</h3><p>New Horizon College of Engineering, India. Top 5% of the cohort.</p></div>
+  <div class="jobs">
+    <div class="job"><span class="when">Oct 2025 to now, London</span><div><h3>Tactical Growth, Customer Success at Eat Ping</h3><p>I'm the single point of contact for customer experience: customer success, email, WhatsApp and weekly feedback reporting to the founder.</p></div></div>
+    <div class="job"><span class="when">Mar 2025 to Dec 2025, Coventry</span><div><h3>Customer Service Assistant (part time) at Vita Student</h3><p>Front desk and operations for over 750 rooms. I triaged tickets in Salesforce and co-organised weekly events.</p></div></div>
+    <div class="job"><span class="when">Sep 2024 to Sep 2025</span><div><h3>MSc Engineering Business Management, Merit, University of Warwick</h3><p>My dissertation was on risk management in engineering projects.</p></div></div>
+    <div class="job"><span class="when">Oct 2023 to Aug 2024, Bangalore</span><div><h3>Mechanical Design Trainee at STEER World</h3><p>I ran five design-to-assembly projects at once and cut delays by about 5% through change control and cross-team sign-off.</p></div></div>
+    <div class="job"><span class="when">Aug 2022 to Sep 2022, India</span><div><h3>Engineering Intern (MRO) at Hindustan Aeronautics Limited</h3><p>I scheduled and documented inspections on Kiran Mk.II jet trainers alongside licensed engineers.</p></div></div>
+    <div class="job"><span class="when">2019 to 2023</span><div><h3>BEng Mechanical Engineering, First Class with Distinction</h3><p>New Horizon College of Engineering, India. Top 5% of the cohort.</p></div></div>
+  </div>
+  <p class="tools">Tools I use: Excel with VBA, Mailchimp, WhatsApp Business flows on Zepic and 360dialog, Stripe, Notion and Canva. I also use Tableau, SQL, Salesforce and Webflow, and I built this site with Claude Code.</p>
+</section>
+
+<section id="project">
+  <h2>Side project</h2>
+  <div class="project">
+    <div>
+      <h3>Side by Side</h3>
+      <p>I'm building a private fitness tracker for partners and small groups. You log your weight, training, food, water and habits, then pick exactly what each person in your circle can see. You can cheer each other on and set shared goals.</p>
+      <p>Your data is encrypted on your phone before it leaves, so nobody else can read it, me included. I built it with Claude Code.</p>
+      <p class="soon">It isn't public yet. If you'd like to try it when it opens, <a href="mailto:neildhiren@gmail.com?subject=Side%20by%20Side">email me</a>.</p>
+    </div>
+    <figure class="clip"><div class="frame"><video src="media/side-by-side.mp4" poster="media/side-by-side.jpg" muted loop playsinline preload="none" aria-label="A 15-second teaser of the Side by Side app"></video><span class="state">Paused</span><button class="sound" type="button" aria-pressed="false">Sound on</button></div></figure>
   </div>
 </section>
 
-<section>
-  <h2>Tools I use</h2>
-  <div class="skills"><span>Excel &amp; VBA</span><span>Tableau</span><span>SQL</span><span>Mailchimp</span><span>WhatsApp Business flows</span><span>Zepic</span><span>Stripe</span><span>Salesforce</span><span>Notion</span><span>Canva</span><span>Webflow</span><span>Claude Code</span></div>
+<section id="outside">
+  <h2>Outside work</h2>
+  <p class="life-intro">When I'm not working, I'm usually trying a new cuisine or walking up something steep.</p>
+  <div class="reel">
+    <figure class="clip"><div class="frame"><video src="media/food.mp4" poster="media/food.jpg" muted loop playsinline preload="none" aria-label="Neil eating a new dish with chopsticks"></video><span class="state">Paused</span></div>
+      <figcaption><b>New cuisines</b>Trying food I haven't had before is one of my favourite things to do.</figcaption></figure>
+    <figure class="clip"><div class="frame"><video src="media/sheep.mp4" poster="media/sheep.jpg" muted loop playsinline preload="none" aria-label="A sheep chewing grass on a hillside"></video><span class="state">Paused</span></div>
+      <figcaption><b>How I switch off</b>Watching sheep eat grass. They seem to have life figured out.</figcaption></figure>
+    <figure class="clip"><div class="frame"><video src="media/scafell.mp4" poster="media/scafell.jpg" muted loop playsinline preload="none" aria-label="The path up Scafell Pike with Wastwater below"></video><span class="state">Paused</span></div>
+      <figcaption><b>Scafell Pike</b>Climbing the highest mountain in England, in the Lake District.</figcaption></figure>
+    <figure class="clip"><div class="frame"><video src="media/coast.mp4" poster="media/coast.jpg" muted loop playsinline preload="none" aria-label="Neil walking along a coastal path"></video><span class="state">Paused</span></div>
+      <figcaption><b>Walks by the sea</b>I want to see as much of the UK, and the world, as I can.</figcaption></figure>
+  </div>
 </section>
 
 <section id="contact">
-  <div class="cta">
-    <h2>Hiring for growth, CRM, customer success, insights or operations?</h2>
-    <p>I'm looking for my next role in London or anywhere in the UK. I'd love to hear what you're building.</p>
-    <div class="btns">
-      <a class="btn primary" href="mailto:neildhiren@gmail.com?subject=Hello%20Neil">Email me</a>
-      <a class="btn ghost" href="https://linkedin.com/in/neildhiren-saldanha" target="_blank" rel="noopener">Message me on LinkedIn</a>
-      <a class="btn ghost" href="Neil-Saldanha-CV.pdf" download>Download PDF CV</a>
-    </div>
+  <div class="close">
+    <p>I'm looking for my next role in growth, CRM, customer insights or customer success and operations, in London or anywhere in the UK.</p>
+    <a class="btn solid" href="mailto:neildhiren@gmail.com?subject=Hello%20Neil">Email me</a>
   </div>
+  <p class="wordmark" aria-hidden="true">Neil Saldanha</p>
 </section>
-
-<footer>Neil Dhiren Saldanha · <a href="mailto:neildhiren@gmail.com">neildhiren@gmail.com</a> · <a href="https://linkedin.com/in/neildhiren-saldanha" target="_blank" rel="noopener">LinkedIn</a></footer>
 </div>
+
+<footer><div class="wrap">neildhiren@gmail.com, <a href="https://linkedin.com/in/neildhiren-saldanha" target="_blank" rel="noopener">LinkedIn</a>, <a href="Neil-Saldanha-CV.pdf" download>CV (PDF)</a></div></footer>
 
 <script>
   document.querySelectorAll('.case button').forEach(function (b) {
     b.addEventListener('click', function () {
-      var c = b.parentElement; c.classList.toggle('open');
-      b.setAttribute('aria-expanded', c.classList.contains('open'));
+      var c = b.parentElement, open = c.classList.toggle('open');
+      b.setAttribute('aria-expanded', open);
+      b.querySelector('.toggle').textContent = open ? 'Close' : 'Open';
     });
   });
-  document.querySelector('.case').classList.add('open');
+
+  // Outside work clips: play when on screen, pause when off screen, tap to pause or play
+  (function () {
+    var clips = [].slice.call(document.querySelectorAll('.clip'));
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function play(c) { var v = c.querySelector('video'); var p = v.play(); if (p && p.catch) p.catch(function () {}); c.classList.add('playing'); c.classList.remove('paused'); }
+    function stop(c, byUser) { c.querySelector('video').pause(); c.classList.remove('playing'); if (byUser) c.classList.add('paused'); }
+    clips.forEach(function (c) {
+      c.querySelector('.frame').addEventListener('click', function () {
+        if (c.classList.contains('playing')) { stop(c, true); c.dataset.held = '1'; }
+        else { delete c.dataset.held; play(c); }
+      });
+    });
+    // Sound button on the Side by Side teaser (browsers only autoplay muted video)
+    document.querySelectorAll('.sound').forEach(function (b) {
+      b.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var c = b.closest('.clip'), v = c.querySelector('video');
+        v.muted = !v.muted;
+        b.textContent = v.muted ? 'Sound on' : 'Sound off';
+        b.setAttribute('aria-pressed', String(!v.muted));
+        if (!v.muted) { delete c.dataset.held; play(c); }
+      });
+    });
+    if (!reduce && 'IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          var c = e.target;
+          if (e.isIntersecting && !c.dataset.held) play(c);
+          else if (!e.isIntersecting) stop(c, false);
+        });
+      }, { threshold: 0.5 });
+      clips.forEach(function (c) { io.observe(c); });
+
+      // Gentle drift: odd and even clips move at slightly different speeds while you scroll
+      var reel = document.querySelector('.reel'), ticking = false;
+      var drifters = [].slice.call(document.querySelectorAll('.reel .clip'));
+      function drift() {
+        ticking = false;
+        if (window.innerWidth <= 820) { drifters.forEach(function (c) { c.style.transform = ''; }); return; }
+        var r = reel.getBoundingClientRect(), mid = r.top + r.height / 2 - window.innerHeight / 2;
+        drifters.forEach(function (c, i) { c.style.transform = 'translateY(' + (mid * (i % 2 ? -0.06 : 0.04)).toFixed(1) + 'px)'; });
+      }
+      window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(drift); } }, { passive: true });
+      drift();
+    }
+  })();
 </script>
 </body>
 </html>
